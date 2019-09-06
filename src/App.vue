@@ -1,7 +1,6 @@
 <template>
   <!-- contains a layout for both mobile and -->
   <div id="app">
-    <RootComponent></RootComponent>
   </div>
 </template>
 <script lang="ts">
@@ -20,4 +19,6 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
 }
+// the grid styling goes under here
+
 </style>
