@@ -20,9 +20,10 @@ import { Component, Vue } from "vue-property-decorator";
 export default class RootComponent extends Vue {
   /**
    * checks if the app is in mobile or not
+   * TODO: make this live checking for resize
    */
   public isMobile(): boolean {
-    return window.length < 966;
+    return window.screen.width < 966;
   }
 }
 </script>
