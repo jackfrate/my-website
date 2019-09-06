@@ -4,8 +4,12 @@
  */
 <template>
   <div class="root">
-    <div v-if="isMobile()" class="app-mobile"></div>
-    <div v-else class="app-desktop"></div>
+    <div v-if="isMobile() === true" class="app-mobile">
+      <p>MOBILE</p>
+    </div>
+    <div v-else class="app-desktop">
+      <p>DESKTOP</p>
+    </div>
   </div>
 </template>
 
