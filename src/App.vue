@@ -1,13 +1,12 @@
 <template>
   <!-- contains a layout for both mobile and -->
-  <div id="app">
-  </div>
+  <div id="app"></div>
 </template>
+
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-@Component({
-})
+@Component({})
 export default class App extends Vue {}
 </script>
 
@@ -20,5 +19,4 @@ export default class App extends Vue {}
   color: #2c3e50;
 }
 // the grid styling goes under here
-
 </style>
