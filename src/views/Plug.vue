@@ -11,13 +11,16 @@
     <!-- hire me pls -->
     <div class="hire-me">
       <h2>Hire Me</h2>
-      <!-- <h1>Hire</h1>
-      <h1>Me</h1> -->
+      <div class="inner-column">
+        <div class="resume-link">
+          <a
+            href="https://www.dropbox.com/s/sjn5vk4ub9muhwi/resumev1.ai?dl=0"
+            target="_blank"
+          >My Resume</a>
+        </div>
+      </div>
     </div>
     <!-- link to resume -->
-    <div class="resume-link">
-      <a href="https://www.dropbox.com/s/sjn5vk4ub9muhwi/resumev1.ai?dl=0" target="_blank">My Resume</a>
-    </div>
     <div class="about-site">
       <h3>Find out about my site</h3>
     </div>
@@ -33,7 +36,17 @@ div.plug {
   .caption {
   }
   .hire-me {
-    font-size: 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+      font-size: 400%;
+    }
+    .inner-column {
+      display: flex;
+      flex-direction: column;
+      justify-self: flex-end;
+    }
   }
   .resume-link {
   }
@@ -61,7 +74,7 @@ div.plug {
     grid-template-areas:
       "NAME HIRE"
       "CAP HIRE"
-      "ABOUT RESUME";
+      "ABOUT HIRE";
     .name {
       grid-area: NAME;
     }
