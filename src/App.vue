@@ -1,12 +1,18 @@
 <template>
-  <!-- contains a layout for both mobile and -->
-  <div id="app"></div>
+  <div id="app">
+    <Plug></Plug>
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Plug from "./views/Plug.vue";
 
-@Component({})
+@Component({
+  components: {
+    Plug
+  }
+})
 export default class App extends Vue {}
 </script>
 
